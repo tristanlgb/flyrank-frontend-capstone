@@ -2,40 +2,40 @@
 
 ## Voice card
 
-Directo, honesto, claro, práctico, cercano, sin exageraciones.
+Direct, honest, clear, practical, approachable, no exaggeration.
 
-## Caso 1: Preparación del entorno y flujo de trabajo con IA
+## Case 1: Setting Up an Environment and AI-Assisted Workflow
 
-### El problema
+### The problem
 
-Estoy desarrollando mi perfil como frontend developer. Ya contaba con conocimientos de React, TypeScript, NestJS y MongoDB, pero necesitaba organizar un entorno de trabajo profesional para el internship y demostrar que podía integrar una herramienta de IA en un flujo real de desarrollo. También debía presentar un repositorio claro, con convenciones documentadas y un historial de Git fácil de evaluar.
+I am developing my profile as a frontend developer. I already had knowledge of React, TypeScript, NestJS, and MongoDB, but I needed to organize a professional working environment for the internship and demonstrate that I could integrate an AI tool into a real development workflow. I also needed to present a clear repository with documented conventions and a Git history that was easy to evaluate.
 
-### Lo que hice y decidí
+### What I did and decided
 
-Creé el repositorio `flyrank-frontend-capstone` y preparé sus archivos iniciales: `README.md`, `CLAUDE.md`, `LICENSE` y `.gitignore`. Documenté en `CLAUDE.md` el stack previsto y reglas concretas para que el asistente mantuviera criterios consistentes.
+I created the `flyrank-frontend-capstone` repository and prepared its initial files: `README.md`, `CLAUDE.md`, `LICENSE`, and `.gitignore`. In `CLAUDE.md`, I documented the planned stack and concrete rules so the assistant could follow consistent standards.
 
-Organicé el historial con Conventional Commits en lugar de subir todos los archivos en un único cambio. Elegí Cursor como asistente de IA y le pedí que leyera el README y las convenciones del proyecto, hiciera una crítica breve y aplicara una mejora pequeña. Revisé el resultado antes de incorporarlo y lo guardé en un commit separado para que el aporte de la IA quedara visible.
+I organized the history with Conventional Commits instead of uploading every file in a single change. I chose Cursor as my AI assistant and asked it to read the README and project conventions, provide a brief critique, and apply one small improvement. I reviewed the result before accepting it and saved it in a separate commit so the AI contribution remained visible.
 
-### El resultado
+### The outcome
 
-El resultado es un repositorio público y ordenado que sirve como base para el capstone. El README explica el propósito, el stack, los requisitos y el flujo de desarrollo. El historial muestra cambios pequeños y descriptivos, y la captura de Cursor demuestra el uso de IA sobre una tarea concreta. El proceso también me permitió practicar cómo dar instrucciones claras a un agente y cómo revisar su trabajo antes de aceptarlo.
+The result is a clean public repository that provides a foundation for the capstone. The README explains the purpose, stack, requirements, and development workflow. The history shows small, descriptive changes, and the Cursor screenshot demonstrates the use of AI on a concrete task. The process also helped me practice giving clear instructions to an agent and reviewing its work before accepting it.
 
-## Antes y después
+## Before and after
 
-**Línea genérica de IA:**
+**Generic AI line:**
 
-> Desarrollador orientado a resultados, apasionado por crear soluciones innovadoras y de alto impacto.
+> Results-driven developer passionate about creating innovative, high-impact solutions.
 
-**Versión editada con mi voz:**
+**Edited in my voice:**
 
-> Desarrollo interfaces con React y TypeScript, y uso IA para trabajar con más claridad sin dejar de revisar cada cambio.
+> I build interfaces with React and TypeScript, and I use AI to work more clearly without skipping the review of each change.
 
 ## Bio
 
-Soy desarrollador frontend con conocimientos de React y TypeScript, además de experiencia de aprendizaje con NestJS y MongoDB. Estoy construyendo proyectos que demuestren cómo organizo el trabajo, tomo decisiones y uso herramientas de IA con criterio. Actualmente estoy ampliando mi experiencia mediante el internship de FlyRank.
+I am a frontend developer with knowledge of React and TypeScript, as well as learning experience with NestJS and MongoDB. I am building projects that show how I organize work, make decisions, and use AI tools thoughtfully. I am currently expanding my experience through the FlyRank internship.
 
-## Contacto / CTA
+## Contact / CTA
 
-Si buscás un frontend developer junior dispuesto a aprender, documentar sus decisiones y mejorar con feedback, podés revisar el repositorio y contactarme a través de mi perfil de GitHub.
+If you are looking for a junior frontend developer who is willing to learn, document decisions, and improve through feedback, you can review the repository and contact me through my GitHub profile.
 
-Repositorio: https://github.com/tristanlgb/flyrank-frontend-capstone
+Repository: https://github.com/tristanlgb/flyrank-frontend-capstone
