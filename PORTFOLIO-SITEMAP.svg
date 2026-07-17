@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#f5f0e6"/>
+  <text x="700" y="85" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, cursive" font-size="42" fill="#17202a">Frontend Portfolio Sitemap</text>
+  <text x="700" y="130" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, cursive" font-size="22" fill="#4d5656">One claim · one audience · one action</text>
+
+  <g font-family="Segoe Print, Comic Sans MS, cursive" fill="#17202a" stroke="#17202a" stroke-width="4">
+    <rect x="95" y="260" width="250" height="180" rx="18" fill="#fffdf7"/>
+    <text x="220" y="315" text-anchor="middle" stroke="none" font-size="30">HOME</text>
+    <text x="220" y="355" text-anchor="middle" stroke="none" font-size="20">Claim: maintainable</text>
+    <text x="220" y="385" text-anchor="middle" stroke="none" font-size="20">React + TypeScript</text>
+    <text x="220" y="415" text-anchor="middle" stroke="none" font-size="18">CTA: View my work</text>
+
+    <rect x="410" y="260" width="250" height="180" rx="18" fill="#fffdf7"/>
+    <text x="535" y="315" text-anchor="middle" stroke="none" font-size="30">WORK</text>
+    <text x="535" y="355" text-anchor="middle" stroke="none" font-size="20">Case studies</text>
+    <text x="535" y="385" text-anchor="middle" stroke="none" font-size="18">Problem · Decisions</text>
+    <text x="535" y="415" text-anchor="middle" stroke="none" font-size="18">Outcome · Evidence</text>
+
+    <rect x="725" y="260" width="250" height="180" rx="18" fill="#fffdf7"/>
+    <text x="850" y="315" text-anchor="middle" stroke="none" font-size="30">ABOUT</text>
+    <text x="850" y="355" text-anchor="middle" stroke="none" font-size="20">Short, relevant bio</text>
+    <text x="850" y="385" text-anchor="middle" stroke="none" font-size="18">How I work</text>
+    <text x="850" y="415" text-anchor="middle" stroke="none" font-size="18">How I use AI</text>
+
+    <rect x="1040" y="260" width="250" height="180" rx="18" fill="#fffdf7"/>
+    <text x="1165" y="315" text-anchor="middle" stroke="none" font-size="30">CONTACT</text>
+    <text x="1165" y="355" text-anchor="middle" stroke="none" font-size="20">One action:</text>
+    <text x="1165" y="385" text-anchor="middle" stroke="none" font-size="19">Contact me for a</text>
+    <text x="1165" y="415" text-anchor="middle" stroke="none" font-size="19">frontend interview</text>
+
+    <path d="M345 350 C370 330 385 330 410 350" fill="none"/>
+    <path d="M395 338 L410 350 L394 360" fill="none"/>
+    <path d="M660 350 C685 330 700 330 725 350" fill="none"/>
+    <path d="M710 338 L725 350 L709 360" fill="none"/>
+    <path d="M975 350 C1000 330 1015 330 1040 350" fill="none"/>
+    <path d="M1025 338 L1040 350 L1024 360" fill="none"/>
+  </g>
+
+  <g font-family="Segoe Print, Comic Sans MS, cursive" fill="#17202a">
+    <text x="700" y="560" text-anchor="middle" font-size="30">Why every page earns its place</text>
+    <text x="160" y="625" font-size="22">1. Home makes the single claim immediately.</text>
+    <text x="160" y="670" font-size="22">2. Work proves the claim with decisions and evidence.</text>
+    <text x="160" y="715" font-size="22">3. About gives only the context a hiring manager needs.</text>
+    <text x="160" y="760" font-size="22">4. Contact offers one clear next step: request an interview.</text>
+  </g>
+
+  <path d="M80 815 C340 790 1060 845 1320 810" fill="none" stroke="#d35400" stroke-width="5" stroke-linecap="round"/>
+  <text x="700" y="855" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, cursive" font-size="22" fill="#d35400">No blog, services page, testimonials, or extra navigation until there is evidence that they help the one action.</text>
+</svg>
