@@ -1,0 +1,4 @@
+
+> fe-03-ai-workflow-drill@1.0.0 typecheck
+> tsc --noEmit
+

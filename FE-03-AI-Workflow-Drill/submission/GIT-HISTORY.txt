@@ -1,0 +1,7 @@
+* dc5b325 (fe-03-precise-prompt) fix: complete verification loop
+* 037b68b feat: add verified settings form workflow
+| * 6831386 (HEAD -> main) docs: add FE-03 comparison and project rules
+|/  
+| * 02a90f5 (fe-03-vague-prompt) feat: add settings form from vague prompt
+|/  
+* e011aa5 chore: initialize FE-03 assignment

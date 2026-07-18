@@ -1,0 +1,11 @@
+import { act,render,screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe,expect,it,vi } from 'vitest';
+import { SettingsForm } from './SettingsForm';
+
+describe('SettingsForm',()=>{
+ it('submits normalized valid values',async()=>{const user=userEvent.setup();const onSave=vi.fn();render(<SettingsForm onSave={onSave}/>);await user.type(screen.getByLabelText(/display name/i),'  Tristan  ');await user.type(screen.getByLabelText(/^email$/i),'tristan@example.com');await user.selectOptions(screen.getByLabelText(/theme/i),'dark');await user.click(screen.getByLabelText(/receive email notifications/i));await user.click(screen.getByRole('button',{name:/save settings/i}));expect(onSave).toHaveBeenCalledWith({displayName:'Tristan',email:'tristan@example.com',theme:'dark',emailNotifications:true});expect(await screen.findByText(/saved successfully/i)).toBeInTheDocument();});
+ it('rejects an invalid email',async()=>{const user=userEvent.setup();render(<SettingsForm/>);await user.type(screen.getByLabelText(/display name/i),'Tristan');await user.type(screen.getByLabelText(/^email$/i),'user@');await user.click(screen.getByRole('button',{name:/save settings/i}));expect(await screen.findByText(/valid email/i)).toBeInTheDocument();});
+ it('rejects a short display name',async()=>{const user=userEvent.setup();render(<SettingsForm/>);await user.type(screen.getByLabelText(/display name/i),'a');await user.type(screen.getByLabelText(/^email$/i),'a@example.com');await user.click(screen.getByRole('button',{name:/save settings/i}));expect(await screen.findByText(/at least 2 characters/i)).toBeInTheDocument();});
+ it('disables submit while saving',async()=>{const user=userEvent.setup();let resolveSave:(()=>void)|undefined;const onSave=vi.fn(()=>new Promise<void>(resolve=>{resolveSave=resolve}));render(<SettingsForm onSave={onSave}/>);await user.type(screen.getByLabelText(/display name/i),'Tristan');await user.type(screen.getByLabelText(/^email$/i),'tristan@example.com');await user.click(screen.getByRole('button',{name:/save settings/i}));expect(screen.getByRole('button',{name:/saving/i})).toBeDisabled();await act(async()=>{resolveSave?.();});});
+});

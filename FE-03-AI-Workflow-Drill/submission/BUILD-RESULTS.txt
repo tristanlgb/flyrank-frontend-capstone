@@ -1,0 +1,13 @@
+
+> fe-03-ai-workflow-drill@1.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 112 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.37 kB[22m[1m[22m[2m │ gzip:  0.27 kB[22m
+[2mdist/[22m[2massets/[22m[35mindex-nlS4TNX3.css  [39m[1m[2m  0.79 kB[22m[1m[22m[2m │ gzip:  0.45 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-NPnbD9mT.js   [39m[1m[2m288.26 kB[22m[1m[22m[2m │ gzip: 88.99 kB[22m
+[32m✓ built in 1.36s[39m
