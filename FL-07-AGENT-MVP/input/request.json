@@ -1,0 +1,30 @@
+{
+  "caseTitle": "Making an AI-assisted workflow visible",
+  "repository": "tristanlgb/flyrank-frontend-capstone",
+  "claims": [
+    {
+      "text": "The repository documents the project stack and conventions.",
+      "evidenceFiles": [
+        "CLAUDE.md"
+      ]
+    },
+    {
+      "text": "The project includes a public README and license.",
+      "evidenceFiles": [
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "text": "The portfolio sitemap and case-study framing are documented.",
+      "evidenceFiles": [
+        "PORTFOLIO-SITEMAP-TOOLKIT.md",
+        "FRAME-IT-AS-CASES.md"
+      ]
+    }
+  ],
+  "links": [
+    "https://github.com/tristanlgb/flyrank-frontend-capstone",
+    "https://tristan-empty-but-live.vercel.app"
+  ]
+}
