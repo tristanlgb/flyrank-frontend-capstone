@@ -26,14 +26,15 @@ This option matches my current skills and the job I want. It supports responsive
 
 I could use Next.js with TypeScript and deploy it to Vercel. It could provide separate routes, metadata, image optimization, server rendering, and an easy path to APIs or a CMS later. A backend would still not be required for the first version.
 
-This is the most powerful option, but most of that power is unnecessary today. I would maintain framework conventions, server/client component decisions, and a larger dependency surface. It could show my work well, but it would add learning and debugging time without improving the first portfolio enough.
+This is the most powerful option, and most of that power is unnecessary today. The advantage is that my live starting page already uses this stack and Vercel supports it directly. The trade-off is that I must maintain framework conventions, server/client component decisions, and a larger dependency surface. I can control that cost by keeping the first version static, using one small App Router structure, and avoiding server features until a real requirement appears.
 
 ## Pressure test
 
-If I choose the simplest option, the site can be finished quickly, but it weakens my React and TypeScript claim. If I choose the most powerful option, I must maintain features and conventions that the portfolio does not currently need. React with Vite fits within a two-week build because I already understand the core stack and can keep the sitemap small. It also displays my work properly: screenshots, detailed case studies, live demos, repositories, and repeated contact calls to action.
+If I choose the simplest option, the site can be finished quickly, but it weakens my React and TypeScript claim. React with Vite is sufficient and would have the smallest framework cost. Next.js adds conventions that the portfolio does not currently need, but the project is already live and verified on that stack. I can finish within two weeks if I keep it to the four planned sections and do not add authentication, a CMS, APIs, or a database. It displays the required work properly: screenshots, detailed case studies, live demos, repositories, and repeated contact calls to action.
 
 ## My decision
 
-I chose **React, TypeScript, Vite, and Vercel**. I did not choose plain HTML because the portfolio should demonstrate the frontend stack I want to be hired for. I did not choose Next.js because its additional capabilities do not solve a current requirement.
+I chose **React, TypeScript, Next.js, and Vercel**. I did not choose plain HTML because the portfolio should demonstrate the frontend stack I want to be hired for. I did not choose Vite because the verified live starting page already uses Next.js, and rebuilding it only to reduce the framework would spend time without improving how the work is presented.
 
-I can maintain the chosen stack because it is close to what I already know, the architecture can stay small, and there is no backend to operate. It shows my work well without turning the portfolio itself into a bigger project than the work it is supposed to present. If I later need authenticated content, a CMS, or stored contact submissions, I can reconsider a backend then—not yet.
+I can maintain the chosen stack because Next.js still uses the React and TypeScript skills I already have, the architecture will stay small, and there is no backend to operate. I will use static content and avoid server features that do not solve a current need. It shows my work well without turning the portfolio itself into a bigger project than the work it is supposed to present. If I later need authenticated content, a CMS, or stored contact submissions, I can reconsider a backend then—not yet.
+
