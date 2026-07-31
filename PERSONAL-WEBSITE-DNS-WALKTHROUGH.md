@@ -4,6 +4,12 @@
 
 https://tristan-empty-but-live.vercel.app
 
+This was the live portfolio URL when the DNS walkthrough was written. The
+current consolidated Vite portfolio is
+https://flyrank-frontend-capstone-eight.vercel.app/. A future custom domain
+should point to the Vercel project chosen as the canonical production site,
+not automatically to the earlier Week 4 deployment.
+
 ## What my CNAME will do
 
 A CNAME record gives one hostname another hostname as its destination. When FlyRank provisions my subdomain, the record for my assigned address—such as `tristan.flyrank.ai`—will point to the hostname Vercel provides for this project. For a normal Vercel subdomain setup, the expected target is `cname.vercel-dns.com`. I will copy the exact value displayed by Vercel when I add the custom domain instead of assuming that value has not changed.

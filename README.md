@@ -1,5 +1,9 @@
 # FlyRank Frontend Capstone
 
+> **Current state:** The production capstone is the canonical portfolio. It
+> combines the personal framing developed in General AI Fluency with the
+> interactive and verification requirements of Frontend AI Engineering.
+
 An accessible React and TypeScript capstone that demonstrates two practical
 AI-assisted workflows:
 
@@ -12,15 +16,24 @@ want to see both the result and the verification process behind it.
 
 ## Live projects
 
-- Portfolio: <https://tristan-empty-but-live.vercel.app>
-- Production capstone:
+- **Canonical portfolio and production capstone:**
   <https://flyrank-frontend-capstone-eight.vercel.app>
 - Dynamic mentor:
   <https://flyrank-frontend-capstone-eight.vercel.app/#chat>
+- Earlier “Empty but Live” milestone:
+  <https://tristan-empty-but-live.vercel.app>
 - Source repository:
   <https://github.com/tristanlgb/flyrank-frontend-capstone>
 
+The earlier URL is preserved as evidence of the Week 4 milestone. It used a
+separate Next.js project. The final capstone uses React, TypeScript, and Vite
+because that is the workflow I prefer and can explain most confidently.
+
 ## Screenshots
+
+These screenshots document the pre-consolidation capstone interface. The live
+URL is the source of truth for the current portfolio layout; new screenshots
+should replace these before the final portal submission.
 
 ### Custom WebGL hero
 
@@ -142,14 +155,14 @@ Its input is `FL-07-AGENT-MVP/input/request.json`; its report is written to
 | Incomplete agent request | Reject before network work | Pass |
 | Complete evidence set | Produce a `PASS` report | Pass |
 | Missing evidence | Keep the missing file visible | Pass |
-| Default frontend route | Render the capstone overview | Pass |
-| Dynamic chat route | Render an accessible labeled input | Pass |
+| Portfolio composition | Render personal framing, work, shader, mentor, process, and contact sections | Pass |
+| Embedded dynamic mentor | Render an accessible labeled input | Pass |
 | Production build | Type-check and create optimized assets | Pass |
 
 Automated verification:
 
 ```text
-Frontend: 2 tests passed
+Frontend and chat fallback: 7 tests passed
 Agent: 3 tests passed
 TypeScript: passed
 Production build: passed
@@ -200,7 +213,7 @@ durable rate-limit store.
 | Environment | Result | Evidence |
 | --- | --- | --- |
 | Chromium desktop | Pass | Hero, navigation, chat request, streamed response, and console checked in production |
-| Responsive mobile, 390×844 | Pass | Hero content, buttons, text wrapping, and viewport captured |
+| Responsive mobile, 390×844 | Pass | No horizontal overflow; all tested links and buttons are at least 44 px high |
 | Firefox | Manual check pending | Firefox is not installed in the available Windows environment |
 | Safari desktop | Manual check pending | Safari is not available on Windows |
 | Mobile Safari on a real iPhone | Manual check pending | Must be opened and checked on an iPhone before portal submission |
@@ -232,6 +245,7 @@ For the FL-09 video:
 
 ## Final submission package
 
+- [documentation continuity guide](DOCUMENTATION-CONTINUITY.md)
 - [FE-12 case study](FE-12-CASE-STUDY.md)
 - [2–3 minute demo script](FE-12-DEMO-SCRIPT.md)
 - [actual-hours log](FE-12-HOURS-LOG.md)

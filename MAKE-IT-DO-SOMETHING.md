@@ -41,6 +41,6 @@ fallback → streamed response → interface**.
 
 ## Evidence to capture
 
-Open the deployed chat route, submit “What should I build next?”, and record
+Open the deployed `#chat` section, submit “What should I build next?”, and record
 the streamed answer appearing. The recording should show the initial request,
 the “Streaming” state, and the final response.

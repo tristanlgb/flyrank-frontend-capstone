@@ -6,7 +6,8 @@ Record the real application and terminal. Do not use slides.
 
 > I built this capstone to show a verifiable AI-assisted workflow, not only a
 > finished screen. The project combines a React interface, a protected dynamic
-> mentor route, a custom WebGL shader, and a read-only agent that checks my
+> mentor section backed by a server route, a custom WebGL shader, and a
+> read-only agent that checks my
 > portfolio evidence.
 
 Open:

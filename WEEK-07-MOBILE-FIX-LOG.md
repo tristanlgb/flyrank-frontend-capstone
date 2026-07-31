@@ -2,6 +2,12 @@
 
 Live URL: https://tristan-empty-but-live.vercel.app
 
+Continuity note: this log belongs to the separate Next.js portfolio audited
+during General AI Fluency Week 7. The later React + Vite capstone consolidated
+the same professional framing with the AI mentor and is available at
+https://flyrank-frontend-capstone-eight.vercel.app/. Results in this log should
+not be presented as a physical-phone test of the later application.
+
 Audit date: July 31, 2026
 
 ## Audit method

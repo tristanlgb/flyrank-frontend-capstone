@@ -30,8 +30,9 @@ notice missing files or broken links before making a portfolio claim.
 ## Core flow
 
 1. A reviewer opens the public capstone URL.
-2. The overview presents the project claim through a responsive WebGL hero.
-3. The reviewer opens the mentor screen and submits a frontend question.
+2. The portfolio hero states the professional claim and leads to selected work.
+3. The reviewer reaches the embedded mentor section and submits a frontend
+   question.
 4. React sends the conversation to the protected `/api/chat` server function.
 5. The server validates input, applies usage limits, and returns streamed text.
 6. The reviewer can open the repository, README, tests, and case-study
@@ -42,13 +43,14 @@ notice missing files or broken links before making a portfolio claim.
 
 ## Screens and surfaces
 
-- **Overview:** custom WebGL shader, project claim, live-demo action, and source
-  link.
-- **Mentor:** suggested prompts, conversation history, streamed response,
+- **Portfolio home:** professional claim, selected projects, About content,
+  contact action, and links to public evidence.
+- **Signature interaction:** custom WebGL shader, explanation, mentor action,
+  and source link.
+- **Embedded mentor:** suggested prompts, conversation history, streamed response,
   loading/stop behavior, and visible error feedback.
-- **Health check:** fetched service metadata and failure state.
-- **Supporting routes:** content-map, accessibility, and settings placeholders
-  used to demonstrate navigation and planned workflow areas.
+- **Process and health:** content mapping, accessibility, verification
+  decisions, fetched service metadata, and a visible failure state.
 - **Command-line agent:** JSON input and Markdown verification report. This is
   intentionally not a graphical screen in the first version.
 
@@ -82,11 +84,13 @@ runtime-log inspection, and production verification.
 The product uses **React 19, TypeScript, Vite, CSS, Vitest, Testing Library,
 Node.js, WebGL, and Vercel Functions**.
 
-React + Vite was chosen because it matches Tristan's existing frontend skills,
-keeps the client small, and allows the capstone to reuse its established
-repository rather than migrating to Next.js only to follow a default. Vercel
-Functions provide the small server boundary needed to protect optional API
-credentials.
+React + Vite was chosen because it matches Tristan's professional preference,
+keeps the client build direct, and avoids adding framework features the current
+product does not use. The earlier Week 4 portfolio used Next.js, but the final
+capstone was consolidated in the established Vite repository so the stack
+decision follows maintainability and familiarity rather than framework parity.
+Vercel Functions provide the small server boundary needed to protect optional
+API credentials without turning the frontend into a larger full-stack system.
 
 ## Success criteria
 

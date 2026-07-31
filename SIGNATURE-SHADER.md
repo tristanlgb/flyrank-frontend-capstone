@@ -2,7 +2,11 @@
 
 ## Live result
 
-<https://flyrank-frontend-capstone-eight.vercel.app/#overview>
+<https://flyrank-frontend-capstone-eight.vercel.app/>
+
+The shader now appears inside the consolidated portfolio rather than acting as
+the entire landing page. This preserves it as a signature interaction while
+letting the professional claim and selected work appear first.
 
 ## What the shader does
 

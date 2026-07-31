@@ -17,6 +17,16 @@ The portfolio contains only four sections:
 
 Pages such as a blog, services, testimonials, and a separate technology catalog are intentionally excluded because they do not currently strengthen the claim or the one action.
 
+## Final implementation continuity
+
+The final Vite portfolio keeps these four content responsibilities but embeds
+two capstone requirements inside the same one-page path: an **AI mentor**
+between Work and Contact, and a short **Process** section explaining
+verification. They are not unrelated pages added “just because.” The mentor is
+the working artifact that proves the capstone, while Process makes the
+AI-assisted decisions reviewable. About, Work, and Contact still serve the same
+claim, audience, and action defined here.
+
 ## Toolkit status
 
 - ChatGPT account: configured and used during the internship.
@@ -52,11 +62,16 @@ The sitemap is appropriately small, and every section can support the intended a
 
 The main weakness is not a missing page but the path order. A hiring manager may want a small amount of context before opening detailed case studies, while another may prefer evidence immediately. The current Home → Work order is still the stronger default because the claim should be proven as quickly as possible. About should remain brief and should not become a biography that delays the contact action.
 
-The single highest-impact improvement is to place a repeated **Contact me about a junior frontend role** CTA at the end of every case study, not only on the Contact section. This keeps the sitemap unchanged while reducing the distance between proof and action.
+The single highest-impact improvement is to keep a clear contact action near
+the work and repeat it in the final Contact section. This reduces the distance
+between proof and action without creating another page or distracting from the
+project evidence.
 
 ## Change I will make
 
-I will keep the four-section sitemap and add the same interview CTA at the end of each case study. I will not add extra pages.
+I will keep the four core responsibilities and avoid extra pages. The final
+implementation adds the mentor and verification process only because later
+capstone assignments require a working AI feature and an explainable workflow.
 
 ## Evidence note
 

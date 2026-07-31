@@ -134,3 +134,21 @@ This identity should follow these rules across the portfolio:
 **Optional Accent:** `#22C55E`  
 **Logo:** TL monogram  
 **Mood:** Modern, minimal, professional, calm, and readable
+
+---
+
+## Final portfolio evolution
+
+This kit records the Week 3 decision and should remain visible as process
+evidence. During the final portfolio consolidation, the visual system evolved
+to **DM Sans** for interface text, **Playfair Display italic** for selected
+editorial emphasis, a cream background, deep green primary color, and a muted
+orange accent.
+
+The change was not made to follow a trend. The purple system suited the earlier
+technical capstone screen, while the green and cream system better supports the
+final combination of technology, communication, and social research. The
+original principles still hold: two font families, a restrained palette,
+strong contrast, readable spacing, a simple TL monogram, and project content
+ahead of decoration. The current production implementation is the source of
+truth for the final visual tokens.

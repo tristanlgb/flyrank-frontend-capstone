@@ -238,6 +238,12 @@ I am learning frontend development. I know React and TypeScript and have learnin
 
 ```text
 I created a minimal portfolio page with my name and frontend focus. It uses React, TypeScript, and Next.js and is hosted on Vercel. The URL is https://tristan-empty-but-live.vercel.app. It is intentionally almost empty because this milestone is about publishing a real URL before adding the full portfolio.
+
+**Later evolution:** This paragraph records the Week 4 state accurately. The
+final portfolio was later consolidated into the React + TypeScript + Vite
+capstone at https://flyrank-frontend-capstone-eight.vercel.app/. I preferred
+Vite for the final build because it matches my normal workflow and the product
+did not need Next.js-specific rendering or routing features.
 ```
 
 ### Stage 1 handoff

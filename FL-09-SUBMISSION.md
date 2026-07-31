@@ -23,12 +23,15 @@ https://youtu.be/REPLACE-WITH-VIDEO-ID
 
 ## Submission notes
 
-I documented and demonstrated my Portfolio Evidence Agent, a read-only Node.js
-agent for checking whether portfolio claims have current public repository
-evidence and working links. The README includes reproducible setup steps, usage
-examples, an architecture sketch, evaluation results, guardrails, build
-history, and an honest limitations list.
+I documented my Portfolio Evidence Agent and prepared the complete narration
+for its demonstration. The agent is a read-only Node.js tool for checking
+whether portfolio claims have current public repository evidence and working
+links. The README includes reproducible setup steps, usage examples, an
+architecture sketch, evaluation results, guardrails, build history, and an
+honest limitations list.
 
-The demo video shows a live request-to-report run rather than slides. I explain
-why I separated testable verification logic from network and filesystem side
-effects, and why the final interpretation remains a human responsibility.
+The recording is still pending. When completed, it must show a live
+request-to-report run rather than slides and explain why testable verification
+logic is separated from network and filesystem side effects. Until a real
+video URL replaces the marker above, this assignment is documentation-ready
+but not submission-complete.

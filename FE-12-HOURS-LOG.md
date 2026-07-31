@@ -3,12 +3,17 @@
 FlyRank requires actual hours, not estimates. Enter the time you really spent;
 do not copy the program estimate unless it matches your records.
 
+The portal is the authority for assignment codes and titles. This log was
+drafted before every card was rechecked, so FE-04 through FE-10 must be matched
+against the current portal before entering totals. Do not infer a title from
+the order of files in this repository.
+
 | Assignment | Program estimate | Actual hours | Evidence or note |
 | --- | ---: | ---: | --- |
 | FE-01 Environment and AI toolchain | 3 | **TODO** | Repository setup and first commits |
 | FE-02 Certifications and capstone spec | 5 | **TODO** | Certificate screenshots and `SPEC.md` |
-| FE-03 Accessible component fundamentals | 5 | **TODO** | Component code and notes |
-| FE-04 AI-assisted workflow drill | 4 | **TODO** | Branch comparison and `WORKFLOW.md` |
+| FE-03 AI-assisted workflow drill | 4 | **TODO** | Branch snapshots, portable bundle, comparison, and `WORKFLOW.md` |
+| FE-04 — confirm title in portal | — | **TODO** | Add the exact portal title, estimate, and matching evidence |
 | FE-05 Capstone skeleton, deployed | 4 | **TODO** | Preview deployment |
 | FE-06 Streaming AI chat interface | 6 | **TODO** | Chat UI and server route |
 | FE-07 Tool results and structured output | 5 | **TODO** | Agent code, tests, and report |

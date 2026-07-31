@@ -18,4 +18,8 @@ AI helped draft the component shape, identify the minimum state (`messages`, `dr
 - Added a server-side SSE route and an `AbortController` stop action so partial assistant text persists after cancellation.
 - Added a native `<form>` and disabled submit state to prevent empty or duplicate messages.
 - Added a visible “Ready” status, responsive message widths, keyboard-friendly suggestion buttons, and an `aria-live` conversation region after reviewing the first draft.
-- Added the `#chat` route to the existing navigation and preserved the previously built overview, health check, accessibility, and settings routes.
+- Added the `#chat` anchor to the portfolio navigation and preserved the
+  previously built shader, health check, accessibility, content-map, and
+  verification work as sections of one continuous page. This keeps the mentor
+  easy to reach without presenting unfinished placeholder routes as product
+  features.
