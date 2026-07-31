@@ -65,10 +65,40 @@ function parseBody(body: unknown): RequestBody | null {
   return body && typeof body === "object" ? body as RequestBody : null;
 }
 
-function fallbackText(messages: ChatMessage[]) {
+export function fallbackText(messages: ChatMessage[]) {
   const userMessages = messages.filter((message) => message.role === "user");
   const last = userMessages[userMessages.length - 1]?.content ?? "your idea";
-  return `For "${last}", make one small screen first, then verify its keyboard path and responsive behavior before polishing the visuals.`;
+  const topic = last.toLowerCase();
+
+  if (topic.includes("accessib") || topic.includes("keyboard") || topic.includes("contrast")) {
+    return "Start with a keyboard-only pass: reach every control, confirm the focus order, and make the focus indicator easy to see. Then check labels, error messages, and color contrast.";
+  }
+  if (topic.includes("content") || topic.includes("copy") || topic.includes("case study")) {
+    return "Choose one audience and one action first. Keep only the sections that help that person understand the problem, your decision, and the evidence behind the result.";
+  }
+  if (topic.includes("form") || topic.includes("input") || topic.includes("validation")) {
+    return "Build the smallest complete form: visible labels, typed validation, inline errors, disabled submission while saving, and one test proving invalid data never submits.";
+  }
+  if (topic.includes("test") || topic.includes("bug") || topic.includes("verify")) {
+    return "Write one test for the riskiest behavior, then run type checking and the production build. After that, repeat the real browser flow because integration bugs can pass unit tests.";
+  }
+  if (topic.includes("deploy") || topic.includes("vercel") || topic.includes("production")) {
+    return "Deploy the narrowest working flow, inspect the production response and runtime logs, and confirm that secrets stay server-side. Record the live URL only after the browser flow passes.";
+  }
+  if (topic.includes("shader") || topic.includes("webgl") || topic.includes("animation")) {
+    return "Change one shader variable at a time: palette, wave frequency, or pointer influence. Cap pixel density, pause hidden-tab animation, and keep a static reduced-motion fallback.";
+  }
+  if (topic.includes("next") || topic.includes("build") || topic.includes("start")) {
+    return "Build one evidence-backed case-study screen next. Show the problem, one decision you made, and a link or test that proves the result before adding more features.";
+  }
+
+  const options = [
+    "Turn that idea into one observable behavior. Define the input, expected result, and one failure case before asking for implementation.",
+    "Reduce the scope to one screen or one user action, build it, and verify keyboard behavior plus the production result before polishing.",
+    "Start by writing the acceptance criteria in plain language. Then implement the smallest version and compare the result against those criteria.",
+  ];
+  const optionIndex = [...last].reduce((total, character) => total + character.charCodeAt(0), 0) % options.length;
+  return options[optionIndex];
 }
 
 async function claudeText(messages: ChatMessage[]) {
