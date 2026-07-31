@@ -2,7 +2,8 @@
 
 ## Purpose
 
-The folder [`ml-internship/`](ml-internship/) preserves the complete public
+The folder [`projects/ml-internship/`](../../projects/ml-internship/) preserves
+the complete public
 contents of
 [`tristanlgb/flyrank-ml-internship`](https://github.com/tristanlgb/flyrank-ml-internship)
 inside the broader FlyRank capstone repository.
@@ -41,9 +42,9 @@ ability to predict a search engine’s algorithm.
 
 The standalone repository is primarily the FlyRank ML starter workspace. Its
 reference pipeline and example outputs are runnable, but several files under
-`ml-internship/work/notebooks/` are assignment skeletons rather than completed
+`projects/ml-internship/work/notebooks/` are assignment skeletons rather than completed
 personal submissions. The file
-`ml-internship/submission/paper_url.txt` still contains a placeholder.
+`projects/ml-internship/submission/paper_url.txt` still contains a placeholder.
 
 For that reason, the portfolio describes this integration as an ML workspace
 and reproducible reference pipeline, not as a completed ML internship or
@@ -54,9 +55,9 @@ exists.
 ## Data and safety boundary
 
 The code is covered by the imported
-[`ml-internship/LICENSE`](ml-internship/LICENSE). The bundled dataset is
+[`projects/ml-internship/LICENSE`](../../projects/ml-internship/LICENSE). The bundled dataset is
 governed separately by
-[`ml-internship/DATA_USE.md`](ml-internship/DATA_USE.md).
+[`projects/ml-internship/DATA_USE.md`](../../projects/ml-internship/DATA_USE.md).
 
 The dataset contains pseudonymized identifiers and observed numeric or
 categorical metrics. It must remain decision-support material:
@@ -73,7 +74,7 @@ categorical metrics. It must remain decision-support material:
 
 The frontend capstone uses Node.js, React, TypeScript, Vite, and Vercel. The ML
 workspace uses Python and notebook tooling. Keeping it under
-`ml-internship/` avoids dependency collisions, preserves the original
+`projects/ml-internship/` avoids dependency collisions, preserves the original
 structure, keeps the data-use notice close to the dataset, and lets reviewers
 run either project without installing the other project’s toolchain.
 
@@ -83,7 +84,7 @@ not treated by GitHub as a root workflow directory in this repository.
 ## Running the reference pipeline
 
 ```bash
-cd ml-internship
+cd projects/ml-internship
 python -m venv .venv
 python -m pip install -r requirements.txt
 python scripts/run_all.py

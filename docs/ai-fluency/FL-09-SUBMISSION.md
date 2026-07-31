@@ -2,7 +2,7 @@
 
 ## README
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/tree/main/FL-07-AGENT-MVP>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/tree/main/projects/portfolio-evidence-agent>
 
 ## Demo video
 

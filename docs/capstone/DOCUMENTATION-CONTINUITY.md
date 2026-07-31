@@ -33,9 +33,11 @@ attempt to rewrite the earlier milestone.
 
 ### Current product documentation
 
-`README.md`, `SPEC.md`, `MAKE-IT-DO-SOMETHING.md`,
-`SIGNATURE-SHADER.md`, `FE-11-SUBMISSION.md`, and the FE-12 package should
-describe the current Vite production application.
+`README.md`, `docs/capstone/SPEC.md`,
+`docs/capstone/MAKE-IT-DO-SOMETHING.md`,
+`docs/capstone/SIGNATURE-SHADER.md`,
+`docs/frontend-engineering/FE-11-SUBMISSION.md`, and the FE-12 package describe
+the current Vite production application.
 
 ### Historical process evidence
 
@@ -72,8 +74,8 @@ owner can produce:
 
 ## Known submission boundaries
 
-- FE-03 has two restorable branches inside a portable Git bundle and two plain
-  snapshots, but the main remote currently exposes only `main`.
+- FE-03 preserves two restorable branches inside a portable Git bundle and two
+  plain snapshots under `projects/fe-03-ai-workflow-drill/`.
 - General AI Fluency Week 7 has a responsive browser audit, but the required
   physical-phone evidence remains pending.
 - FE-11 has Chromium verification; Firefox, desktop Safari, and mobile Safari

@@ -84,8 +84,8 @@ in production.
 
 Evidence:
 
-- [`audits/coverage-summary.json`](audits/coverage-summary.json)
-- [`audits/TESTING-EVIDENCE.md`](audits/TESTING-EVIDENCE.md)
+- [`coverage-summary.json`](../audits/coverage-summary.json)
+- [Testing evidence](../audits/TESTING-EVIDENCE.md)
 
 ## Performance and accessibility
 
@@ -109,11 +109,11 @@ scores reached 100.
 
 Evidence:
 
-- [`audits/lighthouse-mobile-full.json`](audits/lighthouse-mobile-full.json)
-- [`audits/lighthouse-mobile-final.json`](audits/lighthouse-mobile-final.json)
-- [`audits/axe-local.json`](audits/axe-local.json)
-- [`audits/axe-production.json`](audits/axe-production.json)
-- [`audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md`](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
+- [`lighthouse-mobile-full.json`](../audits/lighthouse-mobile-full.json)
+- [`lighthouse-mobile-final.json`](../audits/lighthouse-mobile-final.json)
+- [`axe-local.json`](../audits/axe-local.json)
+- [`axe-production.json`](../audits/axe-production.json)
+- [Accessibility and performance audit](../audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
 
 Automated accessibility tools cannot detect every issue. Keyboard, screen
 reader, real-phone, Firefox, and Safari checks remain part of the manual

@@ -108,7 +108,7 @@ specific failure from the first output.
 
 Evidence:
 
-- `FE-03-AI-Workflow-Drill/WORKFLOW.md`
+- `projects/fe-03-ai-workflow-drill/WORKFLOW.md`
 - the `fe-03-vague-prompt` and `fe-03-precise-prompt` snapshots;
 - the branch diff and saved test results.
 
@@ -126,7 +126,7 @@ must be inspected individually.
 
 Evidence:
 
-- `FE-03-AI-Workflow-Drill/WORKFLOW.md`;
+- `projects/fe-03-ai-workflow-drill/WORKFLOW.md`;
 - the precise form component and tests;
 - `CLAUDE.md` accessibility rules.
 
@@ -199,7 +199,7 @@ npm run build
 The evidence agent has its own checks:
 
 ```bash
-cd FL-07-AGENT-MVP
+cd projects/portfolio-evidence-agent
 npm test
 npm start
 ```

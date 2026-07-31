@@ -24,6 +24,6 @@ Repository:
 https://github.com/tristanlgb/flyrank-frontend-capstone
 
 Case study:
-https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/FE-12-CASE-STUDY.md
+https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/frontend-engineering/FE-12-CASE-STUDY.md
 
 #FrontendDevelopment #React #TypeScript #AIAssistedDevelopment #WebGL
