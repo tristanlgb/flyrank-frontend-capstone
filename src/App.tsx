@@ -183,7 +183,7 @@ export function App() {
     <div className="app-shell">
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="Tristan Lenzberg, home"><span className="brand-mark">TL</span><span>Tristan Lenzberg</span></a>
+        <a className="brand" href="#home"><span className="brand-mark">TL</span><span className="brand-name">Tristan Lenzberg</span></a>
         <nav aria-label="Primary navigation"><ul>{navigation.map((item) => <li key={item.href}><a href={item.href}>{item.label}</a></li>)}</ul></nav>
         <a className="resume-link" href="https://drive.google.com/file/d/1SGQyw23De9kk18zZmCULGiOmXOAI07mR/view?usp=sharing" target="_blank" rel="noreferrer">View résumé ↗</a>
       </header>
