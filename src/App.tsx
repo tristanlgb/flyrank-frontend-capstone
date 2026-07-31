@@ -44,6 +44,16 @@ const projects = [
     live: "https://trabajo-final-angular-indol.vercel.app/",
     source: "https://github.com/tristanlgb/TrabajoFinalAngular",
   },
+  {
+    category: "Applied machine learning · Search intelligence",
+    title: "Refresh Opportunity Model",
+    description: "A reproducible ML pipeline that ranks content for human refresh review using an anonymized dataset, client-holdout validation, explainable reason codes, and careful decision-support language.",
+    tags: ["Python", "Random Forest", "Data validation"],
+    live: "https://github.com/tristanlgb/flyrank-ml-internship",
+    liveLabel: "Open ML repository ↗",
+    source: "https://github.com/tristanlgb/flyrank-ml-internship/blob/main/outputs/model_report.md",
+    sourceLabel: "Read model report ↗",
+  },
 ];
 
 function HealthStatus() {
@@ -212,7 +222,7 @@ export function App() {
               <article className="project-card" key={project.title}>
                 <span className="project-number">0{index + 1}</span><p className="project-category">{project.category}</p><h3>{project.title}</h3><p>{project.description}</p>
                 <div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <div className="project-links"><a href={project.live} target="_blank" rel="noreferrer">Live project ↗</a>{project.source && <a href={project.source} target="_blank" rel="noreferrer">View source ↗</a>}</div>
+                <div className="project-links"><a href={project.live} target="_blank" rel="noreferrer">{"liveLabel" in project ? project.liveLabel : "Live project ↗"}</a>{project.source && <a href={project.source} target="_blank" rel="noreferrer">{"sourceLabel" in project ? project.sourceLabel : "View source ↗"}</a>}</div>
               </article>
             ))}
           </div>

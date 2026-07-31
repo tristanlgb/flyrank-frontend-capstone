@@ -18,6 +18,11 @@ describe("App", () => {
         name: "I turn AI-assisted ideas into verified interfaces.",
       }),
     ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "Refresh Opportunity Model",
+      }),
+    ).toBeInTheDocument();
   });
 
   it("renders the embedded dynamic chat", () => {

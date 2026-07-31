@@ -11,6 +11,12 @@ AI-assisted workflows:
 2. a read-only portfolio evidence agent that checks GitHub files and public
    links before a case study is submitted.
 
+The repository also includes a provenance-preserving snapshot of the
+`flyrank-ml-internship` workspace: its notebooks, Python pipeline, anonymized
+starter data, generated model report, charts, course documentation, and ML
+skills library. See [ML-INTEGRATION.md](ML-INTEGRATION.md) before treating any
+starter notebook as completed personal work.
+
 The project is for reviewers, mentors, and junior-frontend hiring teams who
 want to see both the result and the verification process behind it.
 
@@ -85,6 +91,12 @@ GitHub REST API + public URL checks
   |
   v
 output/verification-report.md
+
+ML Internship Snapshot
+  |
+  | anonymized sample + Python pipeline + notebooks
+  v
+client-holdout validation -> ranked refresh queue -> model report + charts
 ```
 
 ## Requirements
@@ -147,6 +159,19 @@ npm test
 
 Its input is `FL-07-AGENT-MVP/input/request.json`; its report is written to
 `FL-07-AGENT-MVP/output/verification-report.md`.
+
+Run the imported ML reference pipeline separately:
+
+```bash
+cd ml-internship
+python -m venv .venv
+python -m pip install -r requirements.txt
+python scripts/run_all.py
+```
+
+The ML folder has its own [data-use rules](ml-internship/DATA_USE.md) and
+[code license](ml-internship/LICENSE). The bundled CSV is the approved,
+anonymized starter slice; it must not be mixed with private client exports.
 
 ## V2 evaluation results
 
@@ -246,6 +271,7 @@ For the FL-09 video:
 ## Final submission package
 
 - [documentation continuity guide](DOCUMENTATION-CONTINUITY.md)
+- [Machine Learning integration guide](ML-INTEGRATION.md)
 - [FE-12 case study](FE-12-CASE-STUDY.md)
 - [2–3 minute demo script](FE-12-DEMO-SCRIPT.md)
 - [actual-hours log](FE-12-HOURS-LOG.md)

@@ -1,0 +1,2 @@
+*.pdf binary
+ml-internship/scripts/*.py whitespace=-blank-at-eof
