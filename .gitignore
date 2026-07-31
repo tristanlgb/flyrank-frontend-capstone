@@ -25,3 +25,4 @@ Thumbs.db
 # Local task backups and nested assignment repositories
 _local_drafts_before_sync/
 FL-01-01/
+.vercel
