@@ -193,7 +193,9 @@ Current frontend coverage: 62.64% statements and lines
 Agent: 3 tests passed
 TypeScript: passed
 Production build: passed
-Local axe WCAG 2.1 AA audit: 0 violations
+Production Lighthouse mobile: 86 performance, 100 accessibility,
+  100 best practices, 100 SEO
+Production axe WCAG 2.1 AA audit: 0 violations
 ```
 
 The coverage command enforces a minimum of 50% for current source code. The
