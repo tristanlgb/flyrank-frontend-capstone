@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fallbackText } from "./chat";
+import { fallbackText } from "../api/chat";
 
 const message = (content: string) => [{ role: "user" as const, content }];
 
