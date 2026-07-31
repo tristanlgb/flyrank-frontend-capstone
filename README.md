@@ -144,6 +144,7 @@ No production environment variables are currently required or configured.
 ```bash
 npm run dev
 npm run test
+npm run test:coverage
 npm run typecheck
 npm run lint
 npm run build
@@ -188,10 +189,17 @@ Automated verification:
 
 ```text
 Frontend and chat fallback: 7 tests passed
+Current frontend coverage: 62.64% statements and lines
 Agent: 3 tests passed
 TypeScript: passed
 Production build: passed
+Local axe WCAG 2.1 AA audit: 0 violations
 ```
+
+The coverage command enforces a minimum of 50% for current source code. The
+saved reports and audit method are documented in
+[Testing Evidence](audits/TESTING-EVIDENCE.md) and
+[Accessibility and Performance Audit](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md).
 
 ## Limitations
 
@@ -270,6 +278,11 @@ For the FL-09 video:
 
 ## Final submission package
 
+- [structured capstone portfolio entry](CAPSTONE-PORTFOLIO-ENTRY.md)
+- [one-page reflection](CAPSTONE-REFLECTION.md)
+- [production deployment checklist and rollback plan](PRODUCTION-DEPLOYMENT-CHECKLIST.md)
+- [testing evidence](audits/TESTING-EVIDENCE.md)
+- [accessibility and performance audit](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
 - [documentation continuity guide](DOCUMENTATION-CONTINUITY.md)
 - [Machine Learning integration guide](ML-INTEGRATION.md)
 - [FE-12 case study](FE-12-CASE-STUDY.md)
