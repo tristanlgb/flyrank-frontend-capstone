@@ -43,5 +43,26 @@ The local production-equivalent page was tested with axe-core using the
 
 **Result: 0 violations.**
 
+## Final production result
+
+The corrected `main` commit was deployed and audited again on the public URL.
+
+| Category | Score |
+| --- | ---: |
+| Performance | 86 |
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+- Largest Contentful Paint: 3.0 seconds.
+- Cumulative Layout Shift: 0.
+- Total Blocking Time: 0 ms.
+- Production axe WCAG 2.1 AA result: 0 violations.
+
+Saved evidence:
+
+- `lighthouse-mobile-final.json`
+- `axe-production.json`
+
 Automated tools detect only part of the accessibility surface. Manual keyboard,
 screen-reader, Firefox, Safari, and real-phone checks remain required.

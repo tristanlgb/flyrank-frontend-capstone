@@ -89,27 +89,30 @@ Evidence:
 
 ## Performance and accessibility
 
-The mobile Lighthouse audit recorded:
+The final production mobile Lighthouse audit recorded:
 
-- Performance: 90
-- Accessibility before the audit fix: 95
-- Best Practices: 96
+- Performance: 86
+- Accessibility: 100
+- Best Practices: 100
 - SEO: 100
-- Largest Contentful Paint: 2.7 seconds
+- Largest Contentful Paint: 3.0 seconds
 - Cumulative Layout Shift: 0
 - Total Blocking Time: 0 ms
 
-The audit identified insufficient contrast in small orange labels, an
+The earlier audit identified insufficient contrast in small orange labels, an
 accessible-name mismatch in the mobile brand link, and a missing favicon. I
 darkened the light-surface accent, added a separate high-contrast accent for
 dark sections, kept the full brand name available to assistive technology, and
-added an SVG favicon. A follow-up local axe WCAG 2.1 AA audit found 0
-violations.
+added an SVG favicon. A follow-up production axe WCAG 2.1 AA audit found 0
+violations, while final Lighthouse accessibility, best-practices, and SEO
+scores reached 100.
 
 Evidence:
 
 - [`audits/lighthouse-mobile-full.json`](audits/lighthouse-mobile-full.json)
+- [`audits/lighthouse-mobile-final.json`](audits/lighthouse-mobile-final.json)
 - [`audits/axe-local.json`](audits/axe-local.json)
+- [`audits/axe-production.json`](audits/axe-production.json)
 - [`audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md`](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
 
 Automated accessibility tools cannot detect every issue. Keyboard, screen
