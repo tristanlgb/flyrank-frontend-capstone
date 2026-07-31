@@ -230,6 +230,14 @@ For the FL-09 video:
 5. Show one limitation: without a key the free fallback is deterministic.
 6. Run the portfolio evidence agent and open its generated report.
 
+## Final submission package
+
+- [FE-12 case study](FE-12-CASE-STUDY.md)
+- [2–3 minute demo script](FE-12-DEMO-SCRIPT.md)
+- [actual-hours log](FE-12-HOURS-LOG.md)
+- [LinkedIn completion draft](FE-12-LINKEDIN-DRAFT.md)
+- [final portal package](FE-12-FINAL-SUBMISSION.md)
+
 ## License
 
 [MIT](LICENSE)
