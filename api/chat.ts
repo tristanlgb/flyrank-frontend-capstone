@@ -68,8 +68,35 @@ function parseBody(body: unknown): RequestBody | null {
 export function fallbackText(messages: ChatMessage[]) {
   const userMessages = messages.filter((message) => message.role === "user");
   const last = userMessages[userMessages.length - 1]?.content ?? "your idea";
+  const previous = userMessages[userMessages.length - 2]?.content;
   const topic = last.toLowerCase();
 
+  if (/^(hi|hello|hey|hola|buenas)[!.?\s]*$/i.test(last.trim())) {
+    return "Hello! I can help you plan a frontend screen, review accessibility, define tests, debug a deployment, or explain this capstone. What are you working on?";
+  }
+  if (topic.includes("thank") || topic.includes("gracias")) {
+    return "You’re welcome. Tell me what you want to build or verify next, and include the expected result if you already know it.";
+  }
+  if (
+    topic.includes("what can you do")
+    || topic.includes("who are you")
+    || topic.includes("qué puedes hacer")
+    || topic.includes("que puedes hacer")
+    || topic.includes("qué podés hacer")
+    || topic.includes("que podes hacer")
+  ) {
+    return "I’m the capstone’s guided frontend mentor. I can suggest next steps for accessibility, forms, tests, content, deployment, and WebGL. In free mode I use transparent project rules rather than a language model.";
+  }
+  if (
+    topic.includes("small screen")
+    || topic.includes("pantalla pequeña")
+    || topic.includes("pantalla chica")
+  ) {
+    if (previous) {
+      return `Turn “${previous}” into a focused screen with one clear heading, three priority items, one primary action, and a visible status or result. Keep secondary details behind progressive disclosure.`;
+    }
+    return "Paste the feature, text, or workflow you want to transform. I’ll reduce it to one heading, three essential items, one primary action, and one visible result.";
+  }
   if (topic.includes("accessib") || topic.includes("keyboard") || topic.includes("contrast")) {
     return "Start with a keyboard-only pass: reach every control, confirm the focus order, and make the focus indicator easy to see. Then check labels, error messages, and color contrast.";
   }
@@ -92,13 +119,7 @@ export function fallbackText(messages: ChatMessage[]) {
     return "Build one evidence-backed case-study screen next. Show the problem, one decision you made, and a link or test that proves the result before adding more features.";
   }
 
-  const options = [
-    "Turn that idea into one observable behavior. Define the input, expected result, and one failure case before asking for implementation.",
-    "Reduce the scope to one screen or one user action, build it, and verify keyboard behavior plus the production result before polishing.",
-    "Start by writing the acceptance criteria in plain language. Then implement the smallest version and compare the result against those criteria.",
-  ];
-  const optionIndex = [...last].reduce((total, character) => total + character.charCodeAt(0), 0) % options.length;
-  return options[optionIndex];
+  return "I don’t have a reliable free-mode rule for that question. Add the screen, feature, or error you are working on, plus the result you expect, and I can give you a more specific next step.";
 }
 
 async function claudeText(messages: ChatMessage[]) {

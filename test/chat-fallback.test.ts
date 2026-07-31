@@ -18,4 +18,25 @@ describe("free mentor fallback", () => {
       "evidence-backed case-study screen",
     );
   });
+
+  it("answers greetings as greetings", () => {
+    expect(fallbackText(message("Hello"))).toContain("Hello!");
+  });
+
+  it("uses prior conversation for a referential request", () => {
+    const response = fallbackText([
+      { role: "user", content: "Check my accessibility plan" },
+      { role: "assistant", content: "Start with a keyboard-only pass." },
+      { role: "user", content: "Turn this into a small screen" },
+    ]);
+
+    expect(response).toContain("Check my accessibility plan");
+    expect(response).toContain("one primary action");
+  });
+
+  it("asks for context instead of inventing an unrelated answer", () => {
+    expect(fallbackText(message("Tell me about database indexes"))).toContain(
+      "I don’t have a reliable free-mode rule",
+    );
+  });
 });
