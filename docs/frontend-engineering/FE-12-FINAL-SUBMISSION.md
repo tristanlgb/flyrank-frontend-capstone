@@ -10,7 +10,7 @@
 
 ## Case study
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/FE-12-CASE-STUDY.md>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/frontend-engineering/FE-12-CASE-STUDY.md>
 
 ## Final README
 
@@ -26,7 +26,7 @@ https://youtu.be/REPLACE-WITH-VIDEO-ID
 
 ## Hours log
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/FE-12-HOURS-LOG.md>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/frontend-engineering/FE-12-HOURS-LOG.md>
 
 **Status:** pending actual hours for FE-01 through FE-12.
 
@@ -44,7 +44,7 @@ No matching certificate files were found locally during package preparation.
 
 Draft:
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/FE-12-LINKEDIN-DRAFT.md>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/frontend-engineering/FE-12-LINKEDIN-DRAFT.md>
 
 **Pending:** publish personally and replace this note with the public post URL.
 

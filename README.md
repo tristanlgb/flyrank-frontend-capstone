@@ -1,4 +1,4 @@
-# FlyRank Frontend Capstone
+﻿# FlyRank Frontend Capstone
 
 > **Current state:** The production capstone is the canonical portfolio. It
 > combines the personal framing developed in General AI Fluency with the
@@ -14,8 +14,8 @@ AI-assisted workflows:
 The repository also includes a provenance-preserving snapshot of the
 `flyrank-ml-internship` workspace: its notebooks, Python pipeline, anonymized
 starter data, generated model report, charts, course documentation, and ML
-skills library. See [ML-INTEGRATION.md](ML-INTEGRATION.md) before treating any
-starter notebook as completed personal work.
+skills library. See the [ML integration guide](docs/capstone/ML-INTEGRATION.md)
+before treating any starter notebook as completed personal work.
 
 The project is for reviewers, mentors, and junior-frontend hiring teams who
 want to see both the result and the verification process behind it.
@@ -26,7 +26,7 @@ want to see both the result and the verification process behind it.
   <https://flyrank-frontend-capstone-eight.vercel.app>
 - Dynamic mentor:
   <https://flyrank-frontend-capstone-eight.vercel.app/#chat>
-- Earlier “Empty but Live” milestone:
+- Earlier â€œEmpty but Liveâ€ milestone:
   <https://tristan-empty-but-live.vercel.app>
 - Source repository:
   <https://github.com/tristanlgb/flyrank-frontend-capstone>
@@ -45,7 +45,7 @@ should replace these before the final portal submission.
 
 ![Custom violet, blue, and green WebGL shader hero with accessible text and actions](public/screenshots/shader-hero-production.png)
 
-### Dynamic mentor — completed production request
+### Dynamic mentor â€” completed production request
 
 ![Dynamic mentor interface showing a submitted question and the server response](public/screenshots/chat-production.png)
 
@@ -61,8 +61,24 @@ endpoint validates input, limits repeated requests, protects the optional API
 key, and falls back to a deterministic mentor response so the free demo still
 works without paid usage.
 
-See [MAKE-IT-DO-SOMETHING.md](MAKE-IT-DO-SOMETHING.md) for the plain-language
-backend and data-flow explanation.
+See [Make It Do Something](docs/capstone/MAKE-IT-DO-SOMETHING.md) for the
+plain-language backend and data-flow explanation.
+
+## Repository map
+
+| Path | Contents |
+| --- | --- |
+| [`src/`](src/) | Production React and TypeScript interface |
+| [`api/`](api/) | Protected Vercel chat endpoint |
+| [`test/`](test/) | Server and fallback tests |
+| [`public/`](public/) | Production screenshots and static assets |
+| [`docs/`](docs/) | Indexed assignment, capstone, and audit documentation |
+| [`projects/`](projects/) | Standalone workflow drill, evidence agent, and ML workspace |
+| [`examples/`](examples/) | Small learning examples not used by production |
+| [`archive/`](archive/) | Preserved superseded scaffolding |
+
+Start with the [documentation index](docs/README.md) when reviewing internship
+deliverables.
 
 ## Architecture
 
@@ -153,25 +169,27 @@ npm run build
 Run the evidence agent separately:
 
 ```bash
-cd FL-07-AGENT-MVP
+cd projects/portfolio-evidence-agent
 npm start
 npm test
 ```
 
-Its input is `FL-07-AGENT-MVP/input/request.json`; its report is written to
-`FL-07-AGENT-MVP/output/verification-report.md`.
+Its input is `projects/portfolio-evidence-agent/input/request.json`; its report
+is written to
+`projects/portfolio-evidence-agent/output/verification-report.md`.
 
 Run the imported ML reference pipeline separately:
 
 ```bash
-cd ml-internship
+cd projects/ml-internship
 python -m venv .venv
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```
 
-The ML folder has its own [data-use rules](ml-internship/DATA_USE.md) and
-[code license](ml-internship/LICENSE). The bundled CSV is the approved,
+The ML folder has its own
+[data-use rules](projects/ml-internship/DATA_USE.md) and
+[code license](projects/ml-internship/LICENSE). The bundled CSV is the approved,
 anonymized starter slice; it must not be mixed with private client exports.
 
 ## V2 evaluation results
@@ -200,8 +218,8 @@ Production axe WCAG 2.1 AA audit: 0 violations
 
 The coverage command enforces a minimum of 50% for current source code. The
 saved reports and audit method are documented in
-[Testing Evidence](audits/TESTING-EVIDENCE.md) and
-[Accessibility and Performance Audit](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md).
+[Testing Evidence](docs/audits/TESTING-EVIDENCE.md) and
+[Accessibility and Performance Audit](docs/audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md).
 
 ## Limitations
 
@@ -248,7 +266,7 @@ durable rate-limit store.
 | Environment | Result | Evidence |
 | --- | --- | --- |
 | Chromium desktop | Pass | Hero, navigation, chat request, streamed response, and console checked in production |
-| Responsive mobile, 390×844 | Pass | No horizontal overflow; all tested links and buttons are at least 44 px high |
+| Responsive mobile, 390Ã—844 | Pass | No horizontal overflow; all tested links and buttons are at least 44 px high |
 | Firefox | Manual check pending | Firefox is not installed in the available Windows environment |
 | Safari desktop | Manual check pending | Safari is not available on Windows |
 | Mobile Safari on a real iPhone | Manual check pending | Must be opened and checked on an iPhone before portal submission |
@@ -273,25 +291,25 @@ For the FL-09 video:
 
 1. Show this README and the architecture sketch.
 2. Run the automated tests.
-3. Open the live chat and submit “What should I build next?”
+3. Open the live chat and submit â€œWhat should I build next?â€
 4. Explain why the API key stays on the server.
 5. Show one limitation: without a key the free fallback is deterministic.
 6. Run the portfolio evidence agent and open its generated report.
 
 ## Final submission package
 
-- [structured capstone portfolio entry](CAPSTONE-PORTFOLIO-ENTRY.md)
-- [one-page reflection](CAPSTONE-REFLECTION.md)
-- [production deployment checklist and rollback plan](PRODUCTION-DEPLOYMENT-CHECKLIST.md)
-- [testing evidence](audits/TESTING-EVIDENCE.md)
-- [accessibility and performance audit](audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
-- [documentation continuity guide](DOCUMENTATION-CONTINUITY.md)
-- [Machine Learning integration guide](ML-INTEGRATION.md)
-- [FE-12 case study](FE-12-CASE-STUDY.md)
-- [2–3 minute demo script](FE-12-DEMO-SCRIPT.md)
-- [actual-hours log](FE-12-HOURS-LOG.md)
-- [LinkedIn completion draft](FE-12-LINKEDIN-DRAFT.md)
-- [final portal package](FE-12-FINAL-SUBMISSION.md)
+- [structured capstone portfolio entry](docs/capstone/CAPSTONE-PORTFOLIO-ENTRY.md)
+- [one-page reflection](docs/capstone/CAPSTONE-REFLECTION.md)
+- [production deployment checklist and rollback plan](docs/capstone/PRODUCTION-DEPLOYMENT-CHECKLIST.md)
+- [testing evidence](docs/audits/TESTING-EVIDENCE.md)
+- [accessibility and performance audit](docs/audits/ACCESSIBILITY-PERFORMANCE-AUDIT.md)
+- [documentation continuity guide](docs/capstone/DOCUMENTATION-CONTINUITY.md)
+- [Machine Learning integration guide](docs/capstone/ML-INTEGRATION.md)
+- [FE-12 case study](docs/frontend-engineering/FE-12-CASE-STUDY.md)
+- [2â€“3 minute demo script](docs/frontend-engineering/FE-12-DEMO-SCRIPT.md)
+- [actual-hours log](docs/frontend-engineering/FE-12-HOURS-LOG.md)
+- [LinkedIn completion draft](docs/frontend-engineering/FE-12-LINKEDIN-DRAFT.md)
+- [final portal package](docs/frontend-engineering/FE-12-FINAL-SUBMISSION.md)
 
 ## License
 

@@ -2,11 +2,11 @@
 
 ## Capstone specification
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/SPEC.md>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/capstone/SPEC.md>
 
 ## Interview notes
 
-<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/FE-02-INTERVIEW-NOTES.md>
+<https://github.com/tristanlgb/flyrank-frontend-capstone/blob/main/docs/frontend-engineering/FE-02-INTERVIEW-NOTES.md>
 
 ## Capstone option
 
@@ -21,9 +21,9 @@ Vercel Functions.
 
 Pending real Anthropic Academy screenshots:
 
-- [ ] `certificates/claude-101.png`
-- [ ] `certificates/claude-code-101.png`
-- [ ] `certificates/building-with-claude-api.png`
+- [ ] `docs/frontend-engineering/certificates/claude-101.png`
+- [ ] `docs/frontend-engineering/certificates/claude-code-101.png`
+- [ ] `docs/frontend-engineering/certificates/building-with-claude-api.png`
 
 ## Portal notes
 

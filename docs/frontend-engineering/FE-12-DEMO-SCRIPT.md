@@ -54,7 +54,7 @@ npm.cmd run typecheck
 ## 2:10–2:40 — Show the agent
 
 ```powershell
-cd "FL-07-AGENT-MVP"
+cd "projects/portfolio-evidence-agent"
 npm.cmd test
 npm.cmd start
 ```

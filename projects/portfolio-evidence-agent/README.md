@@ -66,7 +66,7 @@ Clone the repository and enter the agent folder:
 
 ```bash
 git clone https://github.com/tristanlgb/flyrank-frontend-capstone.git
-cd flyrank-frontend-capstone/FL-07-AGENT-MVP
+cd flyrank-frontend-capstone/projects/portfolio-evidence-agent
 ```
 
 Confirm Node is available:

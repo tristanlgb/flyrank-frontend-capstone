@@ -43,7 +43,7 @@ What should I build next?
 In the VS Code terminal:
 
 ```powershell
-cd "FL-07-AGENT-MVP"
+cd "projects/portfolio-evidence-agent"
 npm.cmd test
 npm.cmd start
 ```
