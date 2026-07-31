@@ -27,3 +27,28 @@ h1 { margin-bottom: .75rem; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05
 .chat-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; }.online-pill { display: flex; align-items: center; gap: .45rem; color: #287447; font-size: .85rem; font-weight: 700; white-space: nowrap; }.suggestions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0; }.suggestions button { border: 1px solid #d6d0ff; border-radius: 2rem; padding: .55rem .8rem; color: var(--brand); background: #faf9ff; cursor: pointer; }.suggestions button:hover { background: #f0edff; }.messages { display: grid; gap: .75rem; min-height: 14rem; padding: 1rem; border: 1px solid var(--line); border-radius: .9rem; background: #fafbfe; }.message { width: min(88%, 38rem); padding: .8rem 1rem; border-radius: .85rem; }.message p { margin: .25rem 0 0; line-height: 1.5; }.message-label { color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }.message.assistant { border: 1px solid #e2ddff; background: #fff; }.message.user { justify-self: end; color: #fff; background: var(--brand); }.message.user .message-label { color: #ddd7ff; }.chat-form { margin-top: 1rem; }.chat-form label { display: block; margin-bottom: .4rem; color: var(--muted); font-size: .85rem; font-weight: 700; }.chat-form > div { display: flex; gap: .5rem; }.chat-form input { min-width: 0; flex: 1; border: 1px solid #bbc3d2; border-radius: .65rem; padding: .75rem .85rem; color: var(--ink); background: #fff; }.chat-form input:focus { outline: 3px solid #ddd7ff; border-color: var(--brand); }.chat-form button { border: 0; border-radius: .65rem; padding: .75rem 1.1rem; color: #fff; background: var(--brand); cursor: pointer; }.chat-form button:disabled { cursor: not-allowed; opacity: .5; }
 @media (max-width: 720px) { .topbar { align-items: flex-start; flex-direction: column; } .placeholder-grid { grid-template-columns: 1fr; } .footer { gap: 1rem; flex-direction: column; } }
 .chat-form .stop-button { background: #a23b3b; }
+
+.shader-hero { position: relative; isolation: isolate; display: grid; min-height: min(78vh, 52rem); width: min(100%, 76rem); align-items: center; overflow: hidden; border: 1px solid rgba(255, 255, 255, .16); border-radius: 1.5rem; color: #fff; background: linear-gradient(135deg, #090c28, #32176f 55%, #087f86); box-shadow: 0 2rem 6rem rgba(17, 19, 56, .3); }
+.shader-canvas, .shader-scrim { position: absolute; inset: 0; width: 100%; height: 100%; }
+.shader-canvas { z-index: -2; touch-action: none; }
+.shader-scrim { z-index: -1; background: linear-gradient(90deg, rgba(4, 6, 24, .86) 0%, rgba(4, 6, 24, .48) 60%, rgba(4, 6, 24, .25) 100%), linear-gradient(0deg, rgba(4, 6, 24, .5), transparent 55%); }
+.shader-content { width: min(100% - 2rem, 48rem); padding: clamp(2rem, 8vw, 6rem); }
+.shader-kicker { margin-bottom: 1rem; color: #b8fff1; font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.shader-content h1 { max-width: 12ch; margin-bottom: 1.25rem; font-size: clamp(2.6rem, 7vw, 5.6rem); letter-spacing: -.055em; line-height: .96; text-wrap: balance; }
+.shader-content > p:not(.shader-kicker) { max-width: 40rem; color: rgba(255, 255, 255, .86); font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.65; }
+.shader-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.shader-actions a { min-height: 2.75rem; padding: .8rem 1rem; border-radius: .7rem; font-weight: 800; text-decoration: none; }
+.shader-primary { color: #10152d; background: #b8fff1; }
+.shader-secondary { border: 1px solid rgba(255, 255, 255, .5); color: #fff; background: rgba(255, 255, 255, .08); }
+.shader-actions a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.shader-caption { position: absolute; right: 1.25rem; bottom: 1rem; color: rgba(255, 255, 255, .68); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+@media (max-width: 720px) {
+  .shader-hero { min-height: 70vh; border-radius: 1rem; }
+  .shader-content { padding: 2rem 1.25rem 4rem; }
+  .shader-content h1 { font-size: clamp(2.5rem, 13vw, 4rem); }
+  .shader-scrim { background: linear-gradient(0deg, rgba(4, 6, 24, .82), rgba(4, 6, 24, .4)); }
+  .shader-caption { right: auto; left: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shader-canvas { display: none; }
+}

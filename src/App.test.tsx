@@ -3,10 +3,14 @@ import { describe, expect, it } from "vitest";
 import { App } from "./App";
 
 describe("App", () => {
-  it("renders the capstone overview by default", () => {
+  it("renders the signature shader hero by default", () => {
     render(<App />);
 
-    expect(screen.getByRole("heading", { name: "Capstone workspace" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "I turn AI-assisted ideas into verified interfaces.",
+      }),
+    ).toBeInTheDocument();
   });
 
   it("renders the dynamic chat route", () => {
