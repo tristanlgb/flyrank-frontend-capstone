@@ -1,9 +1,9 @@
 # Portfolio Evidence Report
 
-**Case:** Making an AI-assisted workflow visible  
-**Repository:** [tristanlgb/flyrank-frontend-capstone](https://github.com/tristanlgb/flyrank-frontend-capstone)  
-**Branch checked:** `main`  
-**Checked at:** 2026-07-25T03:13:28.811Z  
+**Case:** Making an AI-assisted workflow visible
+**Repository:** [tristanlgb/flyrank-frontend-capstone](https://github.com/tristanlgb/flyrank-frontend-capstone)
+**Branch checked:** `main`
+**Checked at:** 2026-07-31T02:29:36.262Z
 **Final status:** PASS
 
 ## Claim verification
@@ -29,4 +29,4 @@
 
 ## Human review boundary
 
-The agent verifies that named evidence and links exist. It does not decide whether a claim is persuasive, truthful in context, or ready to publish.
+This agent verifies that named evidence and links exist. It does not decide whether a claim is persuasive, truthful in context, or ready to publish. Unsupported evidence remains visible for human review.
