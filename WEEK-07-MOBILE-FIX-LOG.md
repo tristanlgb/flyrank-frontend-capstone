@@ -1,44 +1,70 @@
-# Week 7 — Mobile and Quality Fix Log
+# General AI Fluency — Week 7 Mobile Fix Log
 
 Live URL: https://tristan-empty-but-live.vercel.app
 
+Audit date: July 31, 2026
+
 ## Audit method
 
-I audited the published portfolio at mobile, tablet, and desktop widths, checked rendered sizes of interactive elements and images, tested project, repository, profile, CV, and internal links, and reviewed text contrast and spacing. A final check on my physical phone is still required before submission.
+I used AI as an audit partner to inspect the published portfolio at 390 × 844 px (phone), 768 × 1024 px (tablet), and 1440 × 900 px (desktop). I checked horizontal overflow, rendered text and touch-target sizes, image dimensions, every internal page, live project links, and repository links.
 
-## Touch targets
+This browser audit does not replace the assignment's required check on a real phone. The physical-device evidence section below must be completed before submission.
+
+## Fixes already present
+
+### Touch targets
 
 - **Before:** Header links were about 15 px tall, project links about 19 px, and footer links about 24 px.
-- **After:** Navigation, project, contact, and footer links now have a minimum 44 × 44 px touch area. On narrow screens, the full brand name collapses to the circular TL mark.
+- **After:** Navigation, project, contact, and footer links now have a minimum height of 44 px at the tested phone, tablet, and desktop widths.
 
-## Small text
+### Small text and readability
 
-- **Before:** Project categories were 9.6 px and tags were about 10.4 px on mobile. Several labels were below 12 px.
-- **After:** Categories, tags, section labels, and capability labels use at least 12 px with larger padding. Body copy remains 16 px or larger with comfortable line spacing.
+- **Before:** Project categories were 9.6 px and tags were about 10.4 px on mobile.
+- **After:** The smallest project and social-link text measured 12.48–12.8 px. Body copy is 16 px with a 24 px line height.
 
-## Portrait quality and overflow
+### Responsive layout
 
-- **Before:** A small portrait was displayed close to 300–390 px wide and cropped into a tall shape. The floating note extended past its wrapper.
-- **After:** The portrait is capped at its source width, uses its natural square composition, and is reduced to 260 px on phones. The note stays inside the mobile width.
+- **Before:** The portrait and its floating note could extend beyond their wrapper on narrow screens.
+- **After:** No horizontal overflow was detected at 390 px, 768 px, or 1440 px. The mobile portrait is limited to a 260 × 260 px display area.
 
-## Image weight
+### Image weight
 
 - **Before:** The social preview PNG was 1,013,748 bytes.
-- **After:** It is an optimized 108,179-byte JPEG, approximately 89% smaller. The portrait is 121 KB and the repository capture is 63 KB.
+- **After:** It was replaced with a 108,179-byte JPEG, approximately 89% smaller. The repository capture is about 63 KB.
 
-## Links and readability
+## Link audit
 
-The portfolio, DNS walkthrough, GitHub profile, CV, live demos, and repository URLs responded successfully. LinkedIn rejects automated checks but the URL matches the existing public profile. The email booking link must be tested on the physical phone. Dark sections use light text, body copy uses dark text on white or cream, buttons have high contrast, and paragraph line height is 1.7–1.8.
+The following destinations opened successfully on July 31, 2026:
 
-## Physical phone evidence
+- Portfolio home, Work page, and DNS notes
+- All three case-study pages
+- Social Observatory demo and repository
+- Interactive Pokédex demo
+- Full-Stack Commerce demo and repository
+- Academic Administration demo and repository
+- GitHub profile
+
+The CV and LinkedIn URLs are present and correctly formed. The `mailto:` contact action must be confirmed on the physical phone because it depends on the device's configured mail application.
+
+## Remaining issue found
+
+The home portrait is rendered at 260 × 260 px on mobile, while the delivered image is only 140 × 136 px. It may look soft on a high-density phone screen. A larger source portrait should replace it in a later portfolio update. The current local repository does not contain the source project for this deployed Next.js portfolio, so this image replacement was not made during this audit.
+
+## Physical phone evidence — required before submission
 
 - Phone/model:
 - Browser:
 - Date:
-- Before screenshot:
-- After screenshot:
-- Mail link opened correctly:
-- Navigation anchors worked:
+- Portfolio opened from the public URL: Yes / No
+- Navigation anchors worked: Yes / No
+- Work cards and case studies opened: Yes / No
+- Email button opened the mail application: Yes / No
+- Text was readable without zooming: Yes / No
+- No content spilled beyond the screen: Yes / No
+- Before screenshot filename:
+- After screenshot filename:
 - Notes or final fix:
 
-Before and after screenshots should be attached after the real-device check.
+## Submission status
+
+The responsive browser audit and public-link audit are complete. The assignment is ready to submit only after the physical-phone checklist is filled in and at least one phone screenshot is attached.
