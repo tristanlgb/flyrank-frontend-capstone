@@ -13,9 +13,26 @@ want to see both the result and the verification process behind it.
 ## Live projects
 
 - Portfolio: <https://tristan-empty-but-live.vercel.app>
+- Production capstone:
+  <https://flyrank-frontend-capstone-eight.vercel.app>
+- Dynamic mentor:
+  <https://flyrank-frontend-capstone-eight.vercel.app/#chat>
 - Source repository:
   <https://github.com/tristanlgb/flyrank-frontend-capstone>
-- Dynamic chat: deploy this repository to Vercel, then open `/#chat`.
+
+## Screenshots
+
+### Custom WebGL hero
+
+![Custom violet, blue, and green WebGL shader hero with accessible text and actions](public/screenshots/shader-hero-production.png)
+
+### Dynamic mentor — completed production request
+
+![Dynamic mentor interface showing a submitted question and the server response](public/screenshots/chat-production.png)
+
+### Mobile layout
+
+![Shader hero rendered at a 390 by 844 mobile viewport](public/screenshots/mobile-production.png)
 
 ## What the dynamic feature does
 
@@ -95,6 +112,7 @@ npx vercel dev
 
 With no API key, the endpoint returns a transparent deterministic fallback.
 This avoids exposing a secret or requiring paid credits for basic evaluation.
+No production environment variables are currently required or configured.
 
 ## Commands
 
@@ -160,6 +178,36 @@ Production build: passed
   portfolio claims.
 - Treat missing evidence and network uncertainty as review items rather than
   inventing a successful result.
+
+## Production protection
+
+The `/api/chat` server function applies these limits before it calls an
+external model:
+
+- 12 messages maximum per request;
+- 1,000 characters maximum per message;
+- 10 requests per client during a 60-second window;
+- 15-second maximum function duration;
+- malformed JSON and unsupported HTTP methods are rejected;
+- the optional API key remains server-side.
+
+The current in-memory limiter is intentionally described as demo-level
+protection. A production service running at higher scale should use a shared
+durable rate-limit store.
+
+## Browser and device pass
+
+| Environment | Result | Evidence |
+| --- | --- | --- |
+| Chromium desktop | Pass | Hero, navigation, chat request, streamed response, and console checked in production |
+| Responsive mobile, 390×844 | Pass | Hero content, buttons, text wrapping, and viewport captured |
+| Firefox | Manual check pending | Firefox is not installed in the available Windows environment |
+| Safari desktop | Manual check pending | Safari is not available on Windows |
+| Mobile Safari on a real iPhone | Manual check pending | Must be opened and checked on an iPhone before portal submission |
+
+The project does not claim Safari coverage that was not executed. The final
+reviewer should record the browser versions and any fix made during those
+manual checks.
 
 ## How AI tools helped build this
 
