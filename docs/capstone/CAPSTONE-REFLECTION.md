@@ -1,6 +1,6 @@
 # Capstone Reflection
 
-*Written for the person I was in Week 1.*
+
 
 My name is Tristan Lenzberg, and I am a Full Stack Developer student. At the
 start of this course, I wanted to grow as a developer, but I did not believe I
