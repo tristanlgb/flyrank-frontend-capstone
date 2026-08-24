@@ -2,21 +2,20 @@
 
 *Written for the person I was in Week 1.*
 
-The hardest part was not producing the interface. It was keeping the visible
+My name is Tristan Lenzberg, and I am a Full Stack Developer student. At the
+start of this course, I wanted to grow as a developer, but I did not believe I
+could improve very much in artificial intelligence. AI felt like a specialized
+field outside my usual frontend and backend work. This course changed that
+view: I learned that improving with AI means asking better questions, setting
+clear boundaries, testing the results, and making the final decisions myself.
+
+The hardest part of the capstone was not producing the interface. It was keeping the visible
 experience, the server contract, the tests, and the documentation consistent
 while the project evolved from separate assignments into one portfolio. A
 generated interface can look complete while the client sends the wrong field,
 the server expects another shape, the public deployment lacks a credential, or
 the README still describes an older screen. The work became credible only when
 I treated those boundaries as part of the product.
-
-If I started again, I would define the final information architecture and
-evidence model earlier. I originally built the portfolio milestone, shader,
-mentor, workflow drill, and evidence agent as separate artifacts. That made
-each assignment easier to understand, but consolidation required additional
-continuity work. Next time I would keep one small production shell from the
-start, add each capability behind a clear interface, and maintain one current
-deployment checklist as the project changes.
 
 The most surprising lesson was that verification often changes design
 decisions rather than merely approving them. Lighthouse and axe did not just
@@ -35,12 +34,12 @@ is a simple rule: AI output is a proposal; the accepted product is the proposal
 plus tests, accessibility checks, production evidence, and an explanation of
 what still is not proven.
 
-At the beginning, I thought the main objective was to produce a polished site
-that collected my assignments and projects. What changed was my definition of
+At first, I thought the objective was to produce a polished site that collected
+my assignments and projects. What changed was my definition of
 “finished.” A page is not finished because it renders or because an AI tool can
 describe it convincingly. It is finished enough to share when another person
-can open it, understand the claim, follow the links, reproduce the setup, test
-the important path, and see the limitations without having to ask me privately.
+can understand the claim, follow the links, reproduce the setup, test the
+important path, and see its limitations.
 That shift turned the portfolio from a class artifact into a small operational
 product.
 
@@ -75,7 +74,8 @@ for streaming cancellation and WebGL lifecycle behavior, verify the experience
 on real Safari and Firefox devices, and configure a production model key only
 after adding appropriate usage monitoring.
 
-The person I was in Week 1 wanted proof that I could build with AI. The more
-useful outcome is proof that I can decide what AI should do, verify what it
-produces, explain the system to someone else, and say exactly where the product
-still stops. That is the working habit I want to carry into future projects.
+In Week 1, I was unsure whether AI was a skill I could genuinely develop. I now
+have proof that I can use it deliberately: decide what it should do, verify
+what it produces, explain the system, and state where the product still stops.
+More importantly, I gained the confidence to keep learning. That is the working
+habit I want to carry into my next Full Stack projects.
