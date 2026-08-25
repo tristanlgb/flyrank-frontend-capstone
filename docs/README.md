@@ -42,6 +42,7 @@ through application files.
 - [Week 7 mobile fix log](ai-fluency/WEEK-07-MOBILE-FIX-LOG.md)
 - [FL-09 submission](ai-fluency/FL-09-SUBMISSION.md)
 - [FL-09 demo script](ai-fluency/FL-09-DEMO-VIDEO-SCRIPT.md)
+- [FL-10 final submission package](ai-fluency/FL-10-FINAL-SUBMISSION.md)
 
 Week 3 identity and content-map material is preserved under
 [`ai-fluency/week-03/`](ai-fluency/week-03/).
