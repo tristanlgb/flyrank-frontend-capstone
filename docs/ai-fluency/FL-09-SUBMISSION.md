@@ -9,7 +9,7 @@
 Add the unlisted YouTube URL here after recording:
 
 ```text
-https://youtu.be/REPLACE-WITH-VIDEO-ID
+https://youtube.com/tristanlgb
 ```
 
 ## What the video demonstrates
